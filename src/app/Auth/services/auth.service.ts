@@ -8,7 +8,7 @@ import { IUserDetails } from '../models/IUserDetails';
 })
 export class AuthService {
   userDetails: IUserDetails | null = null;
-  apiKey = 'AIzaSyAXajwxefWR0jxinLfkdFhIq1RFBrKh5vU';
+  apiKey = '';
   loggedInEvent = new EventEmitter<boolean>();
 
   constructor(private http: HttpClient) {}
